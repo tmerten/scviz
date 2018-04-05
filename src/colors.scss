@@ -1,0 +1,50 @@
+$sb-green: hsla(69, 52%, 55%, 1);
+$sb-green-invert: findColorInvert($sb-green);
+$sb-blue: hsla(203, 55%, 41%, 1);
+$sb-blue-invert: findColorInvert($sb-blue);
+$sb-turk: hsla(188, 29%, 53%, 1);
+$sb-turk-invert: findColorInvert($sb-turk);
+$sb-ocean: hsla(164, 39%, 44%, 1);
+$sb-ocean-invert: findColorInvert($sb-ocean);
+$sb-red: hsla(9, 57%, 56%, 1);
+$sb-red-invert: findColorInvert($sb-red);
+$sb-light-red: hsla(17, 67%, 69%, 1);
+$sb-light-red-invert: findColorInvert($sb-light-red);
+$sb-grey: hsla(0, 0%, 28%, 1);
+$sb-grey-invert: findColorInvert($sb-grey);
+$sb-light-grey: hsla(0, 0%, 58%, 1);
+$sb-light-grey-invert: findColorInvert($sb-light-grey);
+$sb-yellow: hsla(52, 71%, 69%, 1);
+$sb-yellow-invert: findColorInvert($sb-yellow);
+$sb-alternate-blue: hsl(201, 40%, 63%);
+$sb-alternate-blue-invert: findColorInvert($sb-alternate-blue);
+
+$sb-tier-0: hsl(213, 100%, 24%);
+$sb-tier-0-invert: findColorInvert($sb-tier-0);
+$sb-tier-1: hsl(212, 61%, 31%);
+$sb-tier-1-invert: findColorInvert($sb-tier-1);
+$sb-tier-2: hsl(211, 37%, 38%);
+$sb-tier-2-invert: findColorInvert($sb-tier-2);
+$sb-tier-3: hsl(208, 20%, 45%);
+$sb-tier-3-invert: findColorInvert($sb-tier-3);
+$sb-tier-late: hsl(198, 8%, 52%);
+$sb-tier-late-invert: findColorInvert($sb-tier-late);
+
+$sb-background-grey: hsla(0, 0%, 98%, 1);
+
+// Slightly lighten a color
+// @param {Color} $color - color to tint
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color
+// @param {Color} $color - color to shade
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
